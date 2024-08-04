@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #1e1e1e;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+        
+        /* Login Container Styles */
+        .login-container {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 300px;
+        }
+        
+        /* Heading Styles */
+        .login-container h1 {
+            margin-bottom: 20px;
+        }
+        
+        /* Input Styles */
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        /* Password Input Styles */
+        .login-container input[type="password"] {
+            font-family: Verdana;
+        }
+        
+        /* Button Styles */
+        .login-container button {
+            background-color: #00b5ad;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+        }
+        
+        /* Link Styles */
+        .login-container a {
+            color: #00b5ad;
+            text-decoration: none;
+        }
+        
+        /* Privacy Notice Styles */
+        .login-container .privacy {
+            font-size: 0.8em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="path_to_logo.png" alt="Bank Logo" style="width: 100px; margin-bottom: 20px;">
+        <h1>Thank you for choosing I&M Bank Personal Banking</h1>
+        <form action="/submit" method="post">
+            <input type="text" placeholder="Enter bank to recieve money" required>
+            <button type="submit">Enter</button>
+        </form>
+        <p class="privacy">Recieve and send money at I&M Bank, we are On Your Side and we value your data privacy. Read our <a href="#">Privacy Notice</a>.</p>
+    </div>
+</body>
+</html>
